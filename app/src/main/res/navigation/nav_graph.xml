@@ -27,6 +27,7 @@
         android:name="com.example.androidsaas.fragment.auth.LoginFlowFragment"
         android:label="flow_fragment_sign"
         tools:layout="@layout/flow_fragment_login" />
+
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.androidsaas.fragment.splash.SplashFragment"

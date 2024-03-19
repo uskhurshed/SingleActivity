@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.example.androidsaas.R
+import com.example.androidsaas.extension.PreferencesUtil.getPrefBool
 import com.example.androidsaas.manager.AuthManager
 
 
@@ -21,10 +22,22 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
             }
 
             override fun onFinish() {
-                if (AuthManager.isAuthorized) {
-                    findNavController().navigate(R.id.mainFlowFragment)
-                } else {
-                    findNavController().navigate(R.id.loginFlowFragment)
+
+
+                AuthManager.isAuthorized =  getPrefBool(requireContext(),"isAuthorized",false)
+
+                val navController = findNavController()
+                when {
+                    AuthManager.isAuthorized -> {
+                        navController.popBackStack()
+                        navController.navigate(R.id.mainFlowFragment)
+                        navController.graph.setStartDestination(R.id.mainFlowFragment)
+                    }
+                    !AuthManager.isAuthorized -> {
+                        navController.popBackStack()
+                        navController.navigate(R.id.loginFlowFragment)
+                        navController.graph.setStartDestination(R.id.loginFlowFragment)
+                    }
                 }
             }
         }.start()
