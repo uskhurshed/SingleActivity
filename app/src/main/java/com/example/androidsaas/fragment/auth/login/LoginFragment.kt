@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.androidsaas.R
 import com.example.androidsaas.databinding.FragmentLoginBinding
+import com.example.androidsaas.extension.NavigationExtensions.activityNavController
+import com.example.androidsaas.extension.NavigationExtensions.navigateSafely
 import com.example.androidsaas.extension.PreferencesUtil.setPrefBool
-import com.example.androidsaas.extension.activityNavController
-import com.example.androidsaas.extension.navigateSafely
 
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
