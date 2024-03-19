@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.kirich1409:viewbindingpropertydelegate-core:1.5.9" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.kirich1409" artifactId="viewbindingpropertydelegate-core" version="1.5.9" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kirich1409/viewbindingpropertydelegate-core/1.5.9/96cbd08548bd2ef282655e3b2ee05566eed64063/viewbindingpropertydelegate-core-1.5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.9" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.kirich1409" artifactId="viewbindingpropertydelegate-noreflection" version="1.5.9" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.kirich1409/viewbindingpropertydelegate-noreflection/1.5.9/bbb8d9718518f8a7d16220a22066f4945dac1ead/viewbindingpropertydelegate-noreflection-1.5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
